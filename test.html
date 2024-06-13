@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .flex-item {
+      flex: 1 1 200px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 600px) {
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
+      .flex-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Design Example</h1>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="images/adam.jpg" alt="Example Image">
+        <p>This is a flexible item.</p>
+      </div>
+      <div class="flex-item">
+        <img src="images/adam.jpg" alt="Example Image">
+        <p>This is another flexible item.</p>
+      </div>
+      <div class="flex-item">
+        <img src="images/adam.jpg" alt="Example Image">
+        <p>And one more flexible item.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

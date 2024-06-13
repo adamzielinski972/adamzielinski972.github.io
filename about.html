@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'Resume.pdf'; 
+            link.download = 'Resume.pdf'; 
+            link.click();
+        }
+    </script>
+
+    <header class="header">
+        <div class="header-name">ADAM ZIELINSKI</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="top-clip"></div>
+
+    <section class="about-me">
+        <h1 class = "main-title">About Me<span class="bg-text">About me</span></h1>
+        <div class="about-container">
+            <div class="left-about">
+                <h4>Information About me</h4>
+                <p>
+                    Hi, I'm a third-year Computer Science student in the co-op program at the University of Guelph, passionate about creative problem-solving and proficient in coding across various languages. Additionally, I'm a dedicated varsity athlete in swimming, showcasing resilience and commitment to my sport. Beyond academics and athletics, I like to listen to podcasts about new technology and engage in personal coding projects.
+                </p>
+                <div class="btn-con" onclick="downloadResume()">
+                    <a href="#" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <div class="btn-icon"><img src="images/download.png"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="right-about">
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">12</p>
+                        <p class="small-text">Months of <br /> Development Experience</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">10+</p>
+                        <p class="small-text">Coding language <br /> proficiencies</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">100's</p>
+                        <p class="small-text">of hours saved <br /> using my work</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">5+</p>
+                        <p class="small-text">Detailed <br /> Personal Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom-clip"></div>
+</body>
+
+
+</html>
