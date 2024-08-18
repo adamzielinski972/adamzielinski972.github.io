@@ -334,9 +334,9 @@ body {
   margin-left: 300px;
   margin-right: 300px;
   margin-top: 100px;
-  padding-bottom: 20px;
   grid-column-gap: 20vw;
   grid-row-gap: 10vh;
+  padding-bottom: 20px;
 }
 .portfolio-container .card {
   position: relative;
@@ -368,7 +368,7 @@ body {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 2; /* Ensure overlay is above the card */
+  z-index: 2; 
 }
 .portfolio-container .card:hover .card-overlay {
   opacity: 1;
